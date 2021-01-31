@@ -1,4 +1,4 @@
-package com.myOwnPractice.tests;
+package com.myOwnPractice.myOwnTests;
 
 import com.myOwnPractice.Utilities.BrowserUtilities;
 import com.myOwnPractice.Utilities.SmartBearethodLogin;

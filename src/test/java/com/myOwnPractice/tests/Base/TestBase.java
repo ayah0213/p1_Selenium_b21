@@ -16,6 +16,7 @@ public class TestBase {
         driver= WebDriverFActory.getDriver("chrome");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+
     }
     @AfterMethod
     public void tearDown(){

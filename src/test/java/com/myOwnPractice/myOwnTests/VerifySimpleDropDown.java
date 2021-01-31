@@ -1,4 +1,4 @@
-package com.myOwnPractice.tests;
+package com.myOwnPractice.myOwnTests;
 
 import com.myOwnPractice.Utilities.WebDriverFActory;
 import org.openqa.selenium.By;
