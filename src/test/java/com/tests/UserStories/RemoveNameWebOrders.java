@@ -1,9 +1,8 @@
-package com.tests.tests;
+package com.tests.UserStories;
 
-import com.tests.TestBase2;
+import com.tests.Base.TestBase;
 import com.tests.Utilities.BrowserUtilities;
 import com.tests.Utilities.SmartBearethodLogin;
-import com.tests.TestBase;
 import org.testng.annotations.Test;
 
 

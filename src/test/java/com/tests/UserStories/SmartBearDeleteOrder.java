@@ -1,4 +1,4 @@
-package com.tests.tests;
+package com.tests.UserStories;
 
 import com.tests.Utilities.SmartBearethodLogin;
 import com.tests.Utilities.WebDriverFActory;

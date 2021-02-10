@@ -1,9 +1,8 @@
-package com.tests.tests;
+package com.tests.UserStories;
 
 import com.github.javafaker.Faker;
-import com.tests.TestBase;
+import com.tests.Base.TestBase;
 import com.tests.Utilities.BrowserUtilities;
-import com.tests.Utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

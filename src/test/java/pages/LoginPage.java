@@ -21,7 +21,6 @@ public class LoginPage {
     @FindBy(xpath = "//div[@class='alert alert-error']")
     public WebElement warningMsg;
 
-
     public LoginPage() {
         // Constructor is mandatory if we will use @Find by Elements annotations
         PageFactory.initElements(Driver.getDriver(), this);
@@ -33,5 +32,7 @@ public class LoginPage {
         username.sendKeys(userName);
         // to bebale to click LOGIN button we use KEYS.Enter
         password.sendKeys(passw, Keys.ENTER);
+        Driver.getDriver().close();
     }
+
 }

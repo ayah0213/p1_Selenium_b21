@@ -1,12 +1,12 @@
-package com.tests.tests;
+package com.tests.UserStories;
 
+import com.tests.Base.TestBase2;
 import com.tests.Utilities.BrowserUtilities;
 import com.tests.Utilities.ConfigurationReader;
 import com.tests.Utilities.Driver;
-import com.tests.TestBase;
 import org.testng.annotations.Test;
 
-public class LoginTest extends TestBase {
+public class LoginTestWithTEstBase extends TestBase2 {
 
     @Test
     public void loginTest(){

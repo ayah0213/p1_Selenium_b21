@@ -1,4 +1,4 @@
-package com.tests.tests;
+package com.tests.UserStories;
 
 
 import com.github.javafaker.Faker;

@@ -17,7 +17,7 @@ public class WebDriverFActory {
             WebDriverManager.firefoxdriver().setup();
             return new FirefoxDriver();
         } else {
-            System.out.println("Goven browser type  doesnt exist ");
+            System.out.println("Given browser type  doesnt exist ");
             return null;
         }
 

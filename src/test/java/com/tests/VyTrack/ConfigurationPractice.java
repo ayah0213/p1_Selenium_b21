@@ -1,23 +1,22 @@
 package com.tests.VyTrack;
 
-import com.tests.TestBase2;
+import com.tests.Base.TestBase;
 import com.tests.Utilities.BrowserUtilities;
 import com.tests.Utilities.ConfigurationReader;
-import com.tests.Utilities.Driver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class ConfigurationPractice extends TestBase2 {
-
-    //#browser TYPE
-    //browser=chrome
-
-    //practiceCybertek=https://practice.cybertekschool.com
-    //vyTrackUrl=https://qa1.vytrack.com/
-
-    //#Credentials:
-    //vyUsername=storemanager85
-    //vyPassw=UserUser123
+public class ConfigurationPractice extends TestBase {
+//
+//    #browser TYPE
+//    browser=chrome
+//
+//    practiceCybertek=https://practice.cybertekschool.com
+//    vyTrackUrl=https://qa1.vytrack.com/
+//
+//    #Credentials:
+//    vyUsername=storemanager85
+//    vyPassw=UserUser123
 
     @Test
     public void test1(){
@@ -32,7 +31,8 @@ public class ConfigurationPractice extends TestBase2 {
 
     @Test
     public void test2(){
-        System.out.println(Driver.get().getTitle());
+        System.out.println(driver.getTitle());
+        System.out.println(driver.getCurrentUrl());
         BrowserUtilities.sleep(2);
     }
 
