@@ -1,4 +1,4 @@
-package com.tests.UserStories;
+package com.tests.GurhansTasks;
 
 import com.github.javafaker.Faker;
 import com.tests.Base.TestBase;
@@ -25,12 +25,11 @@ public class TC_6CybertekRegistrationFormforConfirmation extends TestBase {
         FileInputStream file=new FileInputStream(path);
         properties.load(file);
         String regFormUrl= properties.getProperty("registrFormUrl");
-       driver.get(regFormUrl);
+        driver.get(regFormUrl);
         BrowserUtilities.sleep(2);
         Faker faker= new Faker();
 
         WebElement fName= driver.findElement(By.xpath("//input[@placeholder='first name']"));
-        fName.sendKeys(faker.name().firstName());
         BrowserUtilities.sleep(2);
 
         WebElement lName= driver.findElement(By.xpath("//input[@placeholder='last name']"));

@@ -1,5 +1,6 @@
 package tests;
 
+import com.tests.GurhansTasks.DataProviderDemo;
 import com.tests.Utilities.ConfigurationReader;
 import com.tests.Utilities.Driver;
 import org.testng.annotations.AfterMethod;

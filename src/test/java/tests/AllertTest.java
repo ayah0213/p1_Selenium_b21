@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 import pages.AllertPractice;
 
 
-public class AllertTest  extends TestBase2 {
+public class AllertTest {
 
         @Test(description = "Click on JsAllert")
         public void test1(){

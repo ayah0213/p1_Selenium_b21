@@ -1,4 +1,4 @@
-package tests;
+package com.tests.GurhansTasks;
 
 import com.tests.Utilities.ConfigurationReader;
 import com.tests.Utilities.Driver;

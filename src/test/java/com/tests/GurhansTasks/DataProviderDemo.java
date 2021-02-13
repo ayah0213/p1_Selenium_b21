@@ -1,4 +1,4 @@
-package tests;
+package com.tests.GurhansTasks;
 
 import org.testng.annotations.DataProvider;
 

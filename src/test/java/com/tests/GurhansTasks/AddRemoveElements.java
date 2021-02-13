@@ -1,4 +1,4 @@
-package com.tests.UserStories;
+package com.tests.GurhansTasks;
 
 import com.tests.Utilities.WebDriverFActory;
 import org.openqa.selenium.By;

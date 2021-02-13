@@ -1,4 +1,4 @@
-package tests;
+package com.tests.GurhansTasks;
 
 import com.tests.Utilities.BrowserUtilities;
 import com.tests.Utilities.Driver;

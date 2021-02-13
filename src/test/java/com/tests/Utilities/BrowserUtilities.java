@@ -1,7 +1,6 @@
 package com.tests.Utilities;
 
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -20,6 +19,43 @@ public class BrowserUtilities {
 
         }
 
+
+        // wiats for element to be not STALE
+
+    public static void waitForStaleElement(WebElement element){
+        int i=0;
+        while (i<=15){
+            try{
+                element.isDisplayed();
+                break;
+            }catch (StaleElementReferenceException stExp){
+                i++;
+                try{
+                    Thread.sleep(300);
+                }catch (InterruptedException e){
+                    e.printStackTrace();
+                }
+            }
+            break;
+        }
+    }
+
+    public static boolean waitUntillLoaderMaskDisapear() {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(),5);
+
+        try {
+            wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("div[class='loader-mask shown']")));
+            return true;
+        } catch (NoSuchElementException e) {
+            System.out.println("Loader mask not found");
+            e.printStackTrace();
+            return true;
+        } catch (WebDriverException e) {
+            e.printStackTrace();
+//            System.out.println(e.getMessage());
+
+        }return false;
+    }
     // waits for Clickability
     public static WebElement waitForClickability(WebElement element, int timeout ){
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(),timeout);

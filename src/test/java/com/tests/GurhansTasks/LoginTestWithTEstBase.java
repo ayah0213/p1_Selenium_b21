@@ -1,4 +1,4 @@
-package com.tests.UserStories;
+package com.tests.GurhansTasks;
 
 import com.tests.Base.TestBase2;
 import com.tests.Utilities.BrowserUtilities;

@@ -1,7 +1,6 @@
-package com.tests.UserStories;
+package com.tests.GurhansTasks;
 
 import com.tests.Base.TestBase;
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
 public class InformationAlllert extends TestBase {
